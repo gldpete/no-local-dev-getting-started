@@ -10,12 +10,12 @@ get "/" do
 end
 
 
-class Policy < ActiveRecord::Base
+class Opportunity < ActiveRecord::Base
   self.table_name = 'fullsandbox.opportunity'
 end
 
-get "/policies" do
-  @policies = Policy.all
+get "/opportunity" do
+  @opportunities = Opportunity.all
   erb :index
 end
 
