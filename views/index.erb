@@ -2,16 +2,16 @@
 
   <table>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
+      <th>Close Date</th>
+      <th>Number</th>
+      <th>NTO</th>
     </tr>
 
-    <% @contacts.each do |contact| %>
+    <% @policies.each do |opportunity| %>
       <tr>
-        <td><%= contact.firstname %></td>
-        <td><%= contact.lastname %></td>
-        <td><%= contact.email %></td>
+        <td><%= opportunity.closedate %></td>
+        <td><%= opportunity.name %></td>
+        <td><%= opportunity.NTO__C %></td>
       </tr>
     <% end %>
   </table>
